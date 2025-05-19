@@ -1,0 +1,119 @@
+body {
+	font-family: Arial, sans-serif;
+	height: 100vh;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	
+}
+
+h1, h2 {
+	color:#055608
+}
+
+
+
+.home {
+	text-align: center;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+.header {
+	background-color: #4caf50;
+	color: white;
+	padding: 10px;
+	text-align: center;
+}
+
+.header a {
+	color: white;
+}
+
+.footer a {
+	color: white;
+}
+
+.main-content {
+	display: flex;
+	flex: 1; /* Take up remaining space */
+}
+
+.sidebar {
+	background-color: #f4f4f4;
+	width: 200px; /* Fixed width for sidebar */
+	padding: 15px;
+	border-right: 1px solid #ccc; /* Optional border for separation */
+	position: sticky; /* Make the sidebar sticky */
+	top: 0; /* Stick to the top of the viewport */
+	height: calc(100vh - 50px); /* Full height minus header height */
+	overflow-y: auto; /* Enable vertical scrolling if content overflows */
+}
+
+.sidebar a {
+	color: rgb(0, 0, 0);
+}
+
+.main {
+	flex: 1; /* Take up remaining space */
+	padding: 15px;
+	background-color: #fff;
+}
+
+.footer {
+	background-color: #4caf50;
+	color: white;
+	text-align: center;
+	padding: 10px;
+}
+
+.tableau-responsive {
+	position: relative;
+	width: 100%;
+	padding-bottom: 56.25%; /* 16:9 aspect ratio */
+	height: 0;
+	overflow: hidden;
+}
+
+.tableau-responsive .tableauViz {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100% !important;
+	height: 100% !important;
+}
+
+.show-container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	justify-content: space-between;
+	padding: 20px;
+}
+
+.show-section {
+	flex: 1 1 45%;
+	background-color: #f2f2f2;
+	padding: 20px;
+	border-radius: 10px;
+}
+
+.show-section img {
+	max-width: 100%;
+	display: block;
+	margin-bottom: 10px;
+}
+
+.show-title {
+	font-size: 1.5rem;
+	margin-bottom: 10px;
+}
+
+.show-details {
+	font-size: 0.95rem;
+	line-height: 1.4;
+}
